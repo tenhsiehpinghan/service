@@ -1,0 +1,4 @@
+stock_service_download_dir=/home/hsiehpinghan/Desktop/stock/download
+stock_service_extract_dir=/home/hsiehpinghan/Desktop/stock/extract
+stock_service_transport_dir=/home/hsiehpinghan/Desktop/stock/transport
+stock_service_r_script_dir=/home/hsiehpinghan/git/service/stock-service/src/main/r_script

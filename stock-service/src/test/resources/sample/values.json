@@ -1,0 +1,26 @@
+{  
+   "AsOf20130331":{  
+      "value":"18994984000",
+      "unit":"TWD",
+      "periodType":"instant",
+      "instant":"20130331"
+   },
+   "AsOf20121231":{  
+      "value":"25611406000",
+      "unit":"TWD",
+      "periodType":"instant",
+      "instant":"20121231"
+   },
+   "AsOf20120331":{  
+      "value":"18169976000",
+      "unit":"TWD",
+      "periodType":"instant",
+      "instant":"20120331"
+   },
+   "AsOf20120101":{  
+      "value":"22140268000",
+      "unit":"TWD",
+      "periodType":"instant",
+      "instant":"20120101"
+   }
+}

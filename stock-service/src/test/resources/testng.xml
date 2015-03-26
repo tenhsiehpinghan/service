@@ -1,0 +1,93 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suite" verbose="1">
+	<test name="suit">
+		<classes>
+			<class name="idv.hsiehpinghan.stockservice.suit.TestngSuitSetting" />
+		</classes>
+	</test>
+	<test name="financialReport">
+		<classes>
+			<!-- Test operator -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.XbrlInstanceConverterTest" 
+				/> -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.FinancialReportDownloaderTest" 
+				/> -->
+
+			<!-- Test manager -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.manager.hbase.FinancialReportHbaseManagerTest" 
+				/> -->
+		</classes>
+	</test>
+	<test name="stockClosingCondition">
+		<classes>
+			<!-- Test operator -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.StockClosingConditionOfTwseDownloaderTest" -->
+			<!-- /> -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.StockClosingConditionOfGretaiDownloaderTest" 
+				/> -->
+
+			<!-- Test manager -->
+			<class
+				name="idv.hsiehpinghan.stockservice.manager.hbase.StockClosingConditionHbaseManagerTest" />
+		</classes>
+	</test>
+	<test name="companyBasicInfo">
+		<classes>
+			<!-- Test operator -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.CompanyBasicInfoDownloaderTest" 
+				/> -->
+
+			<!-- Test manager -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.manager.hbase.CompanyBasicInfoHbaseManagerTest" 
+				/> -->
+		</classes>
+	</test>
+	<test name="monthlyOperatingIncome">
+		<classes>
+			<!-- Test operator -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.MonthlyOperatingIncomeDownloaderTest" 
+				/> -->
+
+			<!-- Test manager -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.manager.hbase.MonthlyOperatingIncomeHbaseManagerTest" 
+				/> -->
+		</classes>
+	</test>
+	<test name="exchangeRate">
+		<classes>
+			<!-- Test operator -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.ExchangeRateDownloaderTest" 
+				/> -->
+
+			<!-- Test manager -->
+		</classes>
+	</test>
+	<test name="analysis">
+		<classes>
+			<!-- Test operator -->
+			<!-- <class name="idv.hsiehpinghan.stockservice.operator.XbrlTransporterTest" 
+				/> -->
+			<!-- <class name="idv.hsiehpinghan.stockservice.operator.MainRatioComputerTest" 
+				/> -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.operator.StatisticAnalysisMailSenderTest" 
+				/> -->
+
+			<!-- Test manager -->
+			<!-- <class -->
+			<!-- name="idv.hsiehpinghan.stockservice.manager.hbase.StatisticAnalysisHbaseManagerTest" 
+				/> -->
+		</classes>
+	</test>
+</suite>

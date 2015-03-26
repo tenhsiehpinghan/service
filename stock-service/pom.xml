@@ -1,0 +1,164 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>idv.hsiehpinghan</groupId>
+	<artifactId>stock-service</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>stock-service</name>
+	<url>http://maven.apache.org</url>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<log4j.version>1.2.17</log4j.version>
+		<testng.version>6.1.1</testng.version>
+		<spring.version>4.1.2.RELEASE</spring.version>
+		<jackson.version>2.4.4</jackson.version>
+		<stock-dao.version>1.0.0</stock-dao.version>
+		<selenium-assistant.version>1.0.0</selenium-assistant.version>
+		<xbrl-assistant.version>1.0.0</xbrl-assistant.version>
+		<compress-utility.version>1.0.0</compress-utility.version>
+		<r-assistant.version>1.0.0</r-assistant.version>
+		<mail-assistant.version>1.0.0</mail-assistant.version>
+		<datetime-utility.version>1.0.0</datetime-utility.version>
+		<thread-utility.version>1.0.0</thread-utility.version>
+		<test-utility.version>1.0.0</test-utility.version>
+	</properties>
+
+	<dependencies>
+		<!-- log4j (for spring logging) -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<!-- testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<!-- stock-dao -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>stock-dao</artifactId>
+			<version>${stock-dao.version}</version>
+		</dependency>
+
+		<!-- selenium-assistant -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>selenium-assistant</artifactId>
+			<version>${selenium-assistant.version}</version>
+		</dependency>
+
+		<!-- xbrl-assistant -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>xbrl-assistant</artifactId>
+			<version>${xbrl-assistant.version}</version>
+		</dependency>
+
+		<!-- compress-utility -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>compress-utility</artifactId>
+			<version>${compress-utility.version}</version>
+		</dependency>
+
+		<!-- r-assistant -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>r-assistant</artifactId>
+			<version>${r-assistant.version}</version>
+		</dependency>
+
+		<!-- mail-assistant -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>mail-assistant</artifactId>
+			<version>${mail-assistant.version}</version>
+		</dependency>
+
+		<!-- datetime-utility -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>datetime-utility</artifactId>
+			<version>${datetime-utility.version}</version>
+		</dependency>
+
+		<!-- thread-utility -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>thread-utility</artifactId>
+			<version>${thread-utility.version}</version>
+		</dependency>
+
+		<!-- test-utility -->
+		<dependency>
+			<groupId>idv.hsiehpinghan</groupId>
+			<artifactId>test-utility</artifactId>
+			<version>${test-utility.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.3</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>18.0</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.9</version>
+			</dependency>
+			<dependency>
+				<groupId>xerces</groupId>
+				<artifactId>xercesImpl</artifactId>
+				<version>2.11.0</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
